@@ -1,0 +1,31 @@
+.main {
+  border: solid #FFCC99;
+  border-radius: 15px;
+  background-image: url("../img/smback.jpg");
+  width: 60%;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.main h2 {
+  color: #FFCC99;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .main h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .main h2 {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

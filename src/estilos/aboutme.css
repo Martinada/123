@@ -1,0 +1,218 @@
+body {
+  margin: 10px;
+}
+
+.head {
+  background: url("../img/back.jpg") no-repeat center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.head .logo {
+  width: 100px;
+  height: 100px;
+}
+.head .navbar {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px;
+}
+.head .info {
+  color: #FFCC99;
+  opacity: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.head .go {
+  background-color: #FFCC99;
+  padding: 10px;
+  border: solid red;
+  color: red;
+  height: 20px;
+  width: 120px;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.hrHead {
+  width: 30%;
+}
+
+.center {
+  padding-top: 80px;
+}
+
+.articles {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+}
+.articles img {
+  width: 70px;
+  height: 70px;
+}
+.articles section {
+  width: 18%;
+  height: auto;
+  padding: 20px;
+}
+
+.hrCenter {
+  width: 75%;
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.centerPictures {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: space-around;
+  z-index: 2;
+}
+.centerPictures .left, .centerPictures .right {
+  width: 50%;
+}
+
+.center h1 {
+  color: red;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(252, 120, 79, 0.462745098);
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+.overlay h5 {
+  color: white;
+  display: flex;
+  padding-left: 8px;
+}
+.overlay p {
+  font-size: 10px;
+  display: flex;
+  padding-left: 8px;
+}
+
+.overlay-lupa {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  top: 4px;
+  overflow: hidden;
+  width: 30px;
+  height: 0;
+  transition: 0.5s ease;
+}
+.overlay-lupa .lupa {
+  width: 100%;
+}
+
+.producto {
+  width: 65%;
+  position: relative;
+  height: 200px;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.producto:hover .overlay {
+  height: 40%;
+  width: auto;
+}
+
+.producto:hover .overlay-lupa {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+
+  .go {
+    position: absolute;
+    left: 40%;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 20px;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+  }
+  .center p {
+    width: 90%;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .go {
+    position: absolute;
+    left: 30%;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  ul button {
+    padding: 5px;
+  }
+
+  .navigation {
+    float: right;
+  }
+
+  .overlay h5, .overlay p {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=aboutme.css.map */

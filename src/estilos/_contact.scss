@@ -1,0 +1,37 @@
+$main-color: #FFCC99;
+
+  .main{
+    border: solid $main-color;
+    border-radius: 15px;
+    background-image: url('../img/smback.jpg');
+    width: 60%;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+
+  h2{
+    color: $main-color;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+    .main{
+      h2{
+        font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+    .main{
+      h2{
+      font-size: 14px;
+    }
+  }
+}

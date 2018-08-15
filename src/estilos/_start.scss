@@ -1,0 +1,50 @@
+$main-color: #FFCC99;
+$margen: 50px;
+
+body{
+  background-color: #FDFEE0;
+  margin: 10px;
+}
+.main{
+  border: solid $main-color;
+  border-radius: 15px;
+  background-image: url('../img/smback.jpg');
+  width: 60%;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: $margen;
+  padding: 20px;
+
+  h1{
+    color: $main-color;
+  }
+}
+
+button{
+  background-color: $main-color;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: red;
+  cursor: pointer;
+}
+button:hover{
+  background-color: plum;
+  color: black;
+}
+hr{
+  margin-bottom: $margen;
+}
+
+
+@media (max-width: 480px) {
+    .main{
+      h1{
+      font-size: 20px;
+    }
+  }
+}
